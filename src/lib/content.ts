@@ -92,7 +92,7 @@ const ID: SiteCopy = {
     focusTitle: "Fokus Bisnis",
     focusItems: [
       "Pengembangan UMKM",
-      "Pembangunan pabrik kemasan industri",
+      "Pembangunan pabrik pengemasan skala UMKM / industri",
       "Rantai pasok makanan & minuman",
       "Kemitraan strategis",
     ],
@@ -210,7 +210,7 @@ const EN: SiteCopy = {
     focusTitle: "Business Focus",
     focusItems: [
       "UMKM (MSME) development",
-      "Industrial packaging plant development",
+      "MSME-scale / industrial packaging plant development",
       "Food & beverage supply chain",
       "Strategic partnerships",
     ],
