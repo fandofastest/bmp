@@ -3,7 +3,7 @@ import type { SiteCopy } from "@/lib/content";
 import { Container } from "./Container";
 
 export function Footer({ copy }: { lang: Lang; copy: SiteCopy }) {
-  const year = new Date().getFullYear();
+  const year = 2023;
 
   return (
     <footer className="border-t border-zinc-200/80 bg-white">
