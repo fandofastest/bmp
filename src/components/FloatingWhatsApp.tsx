@@ -26,8 +26,8 @@ function WhatsAppIcon() {
 }
 
 export function FloatingWhatsApp({ lang }: { lang: Lang }) {
-  const phone = "088283317272";
-  const waNumber = `62${phone.replace(/^0/, "")}`;
+  const phoneDisplay = "+62 822-8331-7272";
+  const waNumber = "6282283317272";
 
   const label =
     lang === "en" ? "Chat via WhatsApp" : "Hubungi via WhatsApp";
@@ -44,6 +44,7 @@ export function FloatingWhatsApp({ lang }: { lang: Lang }) {
         <WhatsAppIcon />
       </span>
       <span className="hidden sm:inline">{label}</span>
+      <span className="hidden md:inline text-white/80">{phoneDisplay}</span>
     </a>
   );
 }

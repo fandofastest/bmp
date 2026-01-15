@@ -17,7 +17,8 @@ export default async function ContactPage({
   const copy = getCopy(typedLang);
 
   const email = "briliandmakmurperkasa@gmail.com";
-  const phone = "088283317272";
+  const phoneDisplay = "+62 822-8331-7272";
+  const waNumber = "6282283317272";
   const social = "@PT_BMP";
   const coords = { lat: 0.4740661, lng: 101.4348907 };
   const mapsUrl = `https://www.google.com/maps?q=${coords.lat},${coords.lng}&z=17&hl=${typedLang}`;
@@ -49,12 +50,12 @@ export default async function ContactPage({
                   {copy.contact.phoneLabel}
                 </p>
                 <Link
-                  href={`https://wa.me/62${phone.replace(/^0/, "")}`}
+                  href={`https://wa.me/${waNumber}`}
                   className="mt-2 inline-flex text-sm font-semibold text-zinc-950 hover:underline"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {phone}
+                  {phoneDisplay}
                 </Link>
               </div>
 
