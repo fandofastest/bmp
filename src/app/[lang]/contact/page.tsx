@@ -82,7 +82,7 @@ export default async function ContactPage({
           </div>
 
           <div className="lg:col-span-7">
-            <ContactForm copy={copy} />
+            <ContactForm copy={copy} lang={typedLang} />
 
             <div className="mt-6 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
               <div className="aspect-[16/10] w-full">
