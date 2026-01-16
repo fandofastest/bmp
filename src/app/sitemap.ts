@@ -14,9 +14,7 @@ const PAGES = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    process.env.VERCEL_URL ??
-    "http://localhost:3000";
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.brilliandmp.co.id";
 
   const base = siteUrl.startsWith("http") ? siteUrl : `https://${siteUrl}`;
 

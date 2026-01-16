@@ -14,9 +14,7 @@ const fontSerif = Playfair_Display({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  process.env.VERCEL_URL ??
-  "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.brilliandmp.co.id";
 
 export const metadata: Metadata = {
   title: {
