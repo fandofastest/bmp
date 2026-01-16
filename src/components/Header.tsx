@@ -6,7 +6,6 @@ import type { SiteCopy } from "@/lib/content";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { MobileNav } from "./MobileNav";
-import { NavLink } from "./NavLink";
 
 export function Header({ lang, copy }: { lang: Lang; copy: SiteCopy }) {
   const altLang = otherLang(lang);
@@ -20,56 +19,48 @@ export function Header({ lang, copy }: { lang: Lang; copy: SiteCopy }) {
           <MobileNav lang={lang} copy={copy} />
 
           <nav className="hidden items-center gap-6 text-sm font-medium text-zinc-700 lg:flex">
-            <NavLink
+            <Link
               className="whitespace-nowrap transition-colors hover:text-zinc-950"
-              activeClassName="text-bmp-maroon"
               href={withLang(lang, ROUTES.home)}
-              exact
             >
               {copy.nav.home}
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               className="whitespace-nowrap transition-colors hover:text-zinc-950"
-              activeClassName="text-bmp-maroon"
               href={withLang(lang, ROUTES.about)}
             >
               {copy.nav.about}
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               className="whitespace-nowrap transition-colors hover:text-zinc-950"
-              activeClassName="text-bmp-maroon"
               href={withLang(lang, ROUTES.visionMission)}
             >
               {copy.nav.visionMission}
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               className="whitespace-nowrap transition-colors hover:text-zinc-950"
-              activeClassName="text-bmp-maroon"
               href={withLang(lang, ROUTES.services)}
             >
               {copy.nav.services}
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               className="whitespace-nowrap transition-colors hover:text-zinc-950"
-              activeClassName="text-bmp-maroon"
               href={withLang(lang, ROUTES.milestones)}
             >
               {copy.nav.milestones}
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               className="whitespace-nowrap transition-colors hover:text-zinc-950"
-              activeClassName="text-bmp-maroon"
               href={withLang(lang, ROUTES.partnersCompliance)}
             >
               {copy.nav.partnersCompliance}
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               className="whitespace-nowrap transition-colors hover:text-zinc-950"
-              activeClassName="text-bmp-maroon"
               href={withLang(lang, ROUTES.contact)}
             >
               {copy.nav.contact}
-            </NavLink>
+            </Link>
           </nav>
 
           <div className="flex items-center gap-3">

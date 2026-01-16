@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import type { Lang } from "@/lib/i18n";
 import { ROUTES, withLang } from "@/lib/routes";
 import type { SiteCopy } from "@/lib/content";
-import { NavLink } from "./NavLink";
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -82,15 +82,14 @@ export function MobileNav({ lang, copy }: { lang: Lang; copy: SiteCopy }) {
             <div className="mx-auto w-full max-w-6xl px-5 py-4">
               <nav className="grid gap-1">
                 {items.map((item) => (
-                  <NavLink
+                  <Link
                     key={item.href}
                     href={withLang(lang, item.href)}
                     className="rounded-xl px-3 py-2 text-sm font-semibold text-zinc-900 transition-colors hover:bg-zinc-50"
-                    activeClassName="bg-zinc-50 text-bmp-maroon"
                     onClick={() => setOpen(false)}
                   >
                     {item.label}
-                  </NavLink>
+                  </Link>
                 ))}
               </nav>
             </div>
