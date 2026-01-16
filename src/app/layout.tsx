@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     siteUrl.startsWith("http") ? siteUrl : `https://${siteUrl}`,
   ),
+  verification: {
+    google: "_kePZkMqyFu84u7EWdJgz2Z-osvgQ2ACIPTqE9taWEQ",
+  },
 };
 
 export const viewport: Viewport = {
